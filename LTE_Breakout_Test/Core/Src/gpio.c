@@ -38,7 +38,6 @@
         * Output
         * EVENT_OUT
         * EXTI
-     PB1   ------> S_TIM3_CH4
      PB12   ------> USB_OTG_HS_ID
      PB13   ------> USB_OTG_HS_VBUS
      PB14   ------> USB_OTG_HS_DM
@@ -87,14 +86,6 @@ void MX_GPIO_Init(void)
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
-
-  /*Configure GPIO pin : PtPin */
-  GPIO_InitStruct.Pin = TIM3_CH4_GPS_PPS_Pin;
-  GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
-  GPIO_InitStruct.Pull = GPIO_NOPULL;
-  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
-  GPIO_InitStruct.Alternate = GPIO_AF2_TIM3;
-  HAL_GPIO_Init(TIM3_CH4_GPS_PPS_GPIO_Port, &GPIO_InitStruct);
 
   /*Configure GPIO pins : PB2 PBPin PBPin */
   GPIO_InitStruct.Pin = GPIO_PIN_2|GPIO_IN_PWR_GOOD2_Pin|GPIO_IN_PWR_GOOD1_Pin;
