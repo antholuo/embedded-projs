@@ -16,6 +16,8 @@ fn main() -> ! {
 
     esp_println::logger::init_logger_from_env();
 
+    // Configure RMT Peripheral
+
     let delay = Delay::new();
     loop {
         info!("Hello world!");
