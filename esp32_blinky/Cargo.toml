@@ -18,6 +18,7 @@ esp-hal = { version = "1.0.0-rc.0", features = ["esp32c6", "unstable"] }
 esp-println = { version = "0.13.0", features = ["esp32c6", "log"] }
 log = { version = "0.4.21" }
 esp-hal-smartled= { version = "0.16.0" }
+smart-leds = { version = "0.4.0" }
 
 [profile.dev]
 # Rust debug is too slow.
