@@ -5,17 +5,18 @@
         {
             "type": "board-esp32-c6-devkitc-1",
             "id": "esp",
-            "top": 0.59,
-            "left": 0.67,
+            "top": 0,
+            "left": 0,
             "attrs": {
                 "flashSize": "16"
             }
         },
         {
-            "type": "wokwi-ili99341",
+            "type": "wokwi-ili9341",
             "id": "lcd1",
-            "top": 10,
-            "left": -10,
+            "top": -300,
+            "left": -200,
+            "rotate": 0,
             "attrs": {
                 "flipVertical": "1"
             }
@@ -33,6 +34,82 @@
             "$serialMonitor:TX",
             "",
             []
+        ],
+        [
+            "esp:7",
+            "lcd1:MOSI",
+            "green",
+            [
+
+            ]
+        ],
+        [
+            "esp:10",
+            "lcd1:CS",
+            "white",
+            [
+
+            ]
+        ],
+        [
+            "esp:12",
+            "lcd1:RST",
+            "yellow",
+            [
+                "h20",
+                "v65",
+                "h50"
+            ]
+        ],
+        [
+            "esp:13",
+            "lcd1:D/C",
+            "purple",
+            [
+                "h30",
+                "v80",
+                "h-50"
+            ]
+        ],
+        [
+            "esp:6",
+            "lcd1:SCK",
+            "orange",
+            [
+
+            ]
+        ],
+        [
+            "esp:8",
+            "lcd1:MISO",
+            "blue",
+            [
+
+            ]
+        ],
+        [
+            "esp:4",
+            "lcd1:LED",
+            "magenta",
+            [
+
+            ]
+        ],
+        [
+            "esp:GND.1",
+            "lcd1:GND",
+            "black",
+            [
+
+            ]
+        ],
+        [
+            "esp:3V3",
+            "lcd1:VCC",
+            "red",
+            [
+
+            ]
         ]
     ],
     "serialMonitor": {
