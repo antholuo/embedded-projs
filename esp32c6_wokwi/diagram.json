@@ -10,6 +10,15 @@
             "attrs": {
                 "flashSize": "16"
             }
+        },
+        {
+            "type": "wokwi-ili99341",
+            "id": "lcd1",
+            "top": 10,
+            "left": -10,
+            "attrs": {
+                "flipVertical": "1"
+            }
         }
     ],
     "connections": [
